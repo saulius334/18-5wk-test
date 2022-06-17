@@ -1,35 +1,115 @@
 body,
 body * {
-    margin: 0;
-    padding: 0;
-    vertical-align: top;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+  transition: 0.5s;
 }
-
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 main {
-    background-color: #FAF9F8;
+  background-color: #faf9f8;
 }
 .cap {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 .container {
-    background-color: #D3E4FE;
-    width: 70%;
-    height: 100vh;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #d3e4fe;
+  width: 70%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .box {
-    background-color: white;
-    width: 80%;
-    height: 80%;
+  background-color: white;
+  width: 80%;
+  gap: 20px;
+  padding: 30px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 h1 {
-    font-size: ;
-    color: #171FA9;
+  font-size: 40px;
+  color: #171fa9;
+  font-weight: 400;
+}
+.formbox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.names,
+.emails {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.names input {
+  background-color: #e7e9fe;
+}
+.emails input {
+  background-color: #dce1ff;
+}
+.inpstyle {
+  width: 50%;
+  padding: 20px;
+}
+.adrs {
+  width: 100%;
+  background-color: #c7cdfd;
+}
+textarea {
+  background-color: #a6b2fe;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.brd {
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.brd:focus {
+  outline-width: 0;
+}
+.brd::placeholder {
+  color: #2228b9;
+}
+.btn {
+  padding: 15px 60px;
+  align-self: center;
+  background-color: #233bf5;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.btn:hover {
+  background-color: #2228b9;
+  box-shadow: 2px 2px 5px gray;
+  cursor: pointer;
+}
+.what {
+  color: #5ec8a7;
+}
+@media (max-width: 800px) {
+  .names,
+  .emails {
+    flex-wrap: wrap;
+  }
+  .inpstyle {
+    width: 100%;
+  }
+  h1 {
+    font-size: 30px;
+    align-self: center;
+  }
+  .box {
+    padding: 30px 20px;
+  }
 }

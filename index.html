@@ -1,23 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title class="cap">get in touch</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div class="container">
-            <div class="box">
-                <h1 class="cap">get in touch</h1>
-                <form>
-
-                </form>
+      <div class="container">
+        <div class="box">
+          <h1 class="cap">get in touch</h1>
+          <form class="formbox">
+            <div class="names">
+              <input
+                class="inpstyle brd cap"
+                type="text"
+                required
+                placeholder="first name"
+              />
+              <input
+                class="inpstyle brd cap"
+                type="text"
+                required
+                placeholder="last name"
+              />
             </div>
+            <div class="emails">
+              <input
+                class="inpstyle brd cap"
+                type="email"
+                required
+                placeholder="email"
+              />
+              <input
+                class="inpstyle brd cap"
+                type="text"
+                required
+                placeholder="phone"
+              />
+            </div>
+            <input
+              class="adrs inpstyle brd cap"
+              type="text"
+              placeholder="address"
+            />
+            <textarea
+              class="brd"
+              required
+              cols="30"
+              rows="10"
+              placeholder="Type your message here"
+            ></textarea>
+            <input class="btn" type="submit" value="Submit" />
+          </form>
+          <p class="what">Thanks for submitting!</p>
         </div>
+      </div>
     </main>
-    
-</body>
+  </body>
 </html>
