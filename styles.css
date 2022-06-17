@@ -67,6 +67,7 @@ textarea {
   background-color: #a6b2fe;
   padding: 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  resize: vertical;
 }
 .brd {
   border: none;
